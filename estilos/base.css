@@ -25,12 +25,13 @@ header {
     text-align: center;
 }
 
-header h1 {
+#course-title {
+    display: block;
     font-size: 1.05rem;
     font-weight: normal;
     padding: 10px 20px;
     letter-spacing: 0.5px;
-    font-family: Georgia, serif;
+    font-family: 'Roboto', Georgia, serif;
 }
 
 /* ======== NAV ======== */
