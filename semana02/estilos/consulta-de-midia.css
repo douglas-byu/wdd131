@@ -1,0 +1,26 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #d6dff7;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+main,
+footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #999;
+    padding: 1rem;
+    background-color: #c5cce8;
+}
+
+section {
+    padding: 1rem;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
