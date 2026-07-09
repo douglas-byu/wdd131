@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+header {
+    background-color: #e0d4f5;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+h1 {
+    font-size: 1.4rem;
+    color: #333;
+}
+
+main {
+    background-color: #f5f5f5;
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+label {
+    display: block;
+    padding: 1rem 1rem 0.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"] {
+    display: block;
+    width: calc(100% - 2rem);
+    margin: 0 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button#add-btn {
+    display: block;
+    width: calc(100% - 2rem);
+    margin: 1rem;
+    padding: 0.6rem;
+    background-color: #e0d4f5;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button#add-btn:hover {
+    background-color: #d0c0eb;
+}
+
+ul {
+    list-style: none;
+    padding: 0 1rem 1rem;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e8e0f0;
+    padding: 0.6rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+li button {
+    background-color: transparent;
+    color: #d9534f;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+li button:hover {
+    color: #c9302c;
+}
