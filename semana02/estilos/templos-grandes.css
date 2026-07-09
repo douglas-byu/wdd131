@@ -1,0 +1,30 @@
+@media (min-width: 768px) {
+    /* ===== HEADER DESKTOP ===== */
+    header {
+        flex-wrap: nowrap;
+    }
+
+    /* Esconder botão hamburger no desktop */
+    #hamburger-btn {
+        display: none;
+    }
+
+    /* Nav visível em linha no desktop */
+    nav {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
+    }
+
+    nav a {
+        border-bottom: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+    }
+
+    /* ===== GALLERY GRID DESKTOP ===== */
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
