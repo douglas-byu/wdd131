@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Página sobre Cabo Verde – conheça dados, clima e a beleza do arquipélago africano." />
+  <title>Cabo Verde – Leoncios</title>
+  <link rel="stylesheet" href="styles/local.css" />
+  <script src="scripts/local.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Cabo Verde</h1>
+  </header>
+
+  <main>
+
+    <!-- Imagem principal responsiva com srcset -->
+    <div class="hero-container">
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="images/caboverde-large.webp 1200w"
+          sizes="100vw"
+        />
+        <img
+          src="images/caboverde-small.webp"
+          srcset="images/caboverde-small.webp 600w, images/caboverde-large.webp 1200w"
+          sizes="(max-width: 767px) 100vw, 100vw"
+          alt="Praia idílica de Cabo Verde com água turquesa e montanhas vulcânicas ao fundo"
+          class="hero-image"
+          width="1200"
+          height="600"
+        />
+      </picture>
+
+      <!-- Caixas sobrepostas na imagem (visíveis apenas em desktop) -->
+      <div class="data-box overlay-box" aria-label="Dados sobre Cabo Verde">
+        <h2>Dados</h2>
+        <table>
+          <tbody>
+            <tr><th scope="row">Área:</th><td>4.033 km²</td></tr>
+            <tr><th scope="row">População:</th><td>561.901</td></tr>
+            <tr><th scope="row">Capital:</th><td>Praia</td></tr>
+            <tr><th scope="row">Idiomas:</th><td>Português, Crioulo</td></tr>
+            <tr><th scope="row">Moeda:</th><td>Escudo Cabo-verdiano</td></tr>
+            <tr><th scope="row">Fuso Horário:</th><td>UTC-1</td></tr>
+            <tr><th scope="row">Código de Chamada:</th><td>+238</td></tr>
+            <tr><th scope="row">TLD da Internet:</th><td>.cv</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="weather-box overlay-box" aria-label="Clima em Cabo Verde">
+        <h2 class="weather-title">Clima</h2>
+        <img
+          src="images/weather-icon.svg"
+          alt="Ícone de clima – parcialmente nublado com vento"
+          class="weather-icon-mobile"
+          width="80"
+          height="80"
+        />
+        <table>
+          <tbody>
+            <tr><th scope="row">Temperatura:</th><td>25 °C</td></tr>
+            <tr><th scope="row">Condições:</th><td>Parcialmente Nublado</td></tr>
+            <tr><th scope="row">Vento:</th><td>25 km/h</td></tr>
+            <tr><th scope="row">Sensação Térmica:</th><td id="wind-chill">--</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Seções de conteúdo (visíveis somente em mobile) -->
+    <section class="mobile-content">
+
+      <div class="data-box" aria-label="Dados sobre Cabo Verde">
+        <h2>Dados</h2>
+        <table>
+          <tbody>
+            <tr><th scope="row">Área:</th><td>4.033 km²</td></tr>
+            <tr><th scope="row">População:</th><td>561.901</td></tr>
+            <tr><th scope="row">Capital:</th><td>Praia</td></tr>
+            <tr><th scope="row">Idiomas:</th><td>Português, Crioulo</td></tr>
+            <tr><th scope="row">Moeda:</th><td>Escudo Cabo-verdiano</td></tr>
+            <tr><th scope="row">Fuso Horário:</th><td>UTC-1</td></tr>
+            <tr><th scope="row">Código de Chamada:</th><td>+238</td></tr>
+            <tr><th scope="row">TLD da Internet:</th><td>.cv</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="weather-box" aria-label="Clima em Cabo Verde">
+        <h2 class="weather-title">Clima</h2>
+        <img
+          src="images/weather-icon.svg"
+          alt="Ícone de clima – parcialmente nublado com vento"
+          class="weather-icon-mobile"
+          width="80"
+          height="80"
+        />
+        <table>
+          <tbody>
+            <tr><th scope="row">Temperatura:</th><td>25 °C</td></tr>
+            <tr><th scope="row">Condições:</th><td>Parcialmente Nublado</td></tr>
+            <tr><th scope="row">Vento:</th><td>25 km/h</td></tr>
+            <tr><th scope="row">Sensação Térmica:</th><td id="wind-chill-mobile">--</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      &copy;<span id="current-year"></span> &#127944; Leoncios &mdash; Cabo Verde &#127944;
+    </p>
+    <p>Última Modificação: <span id="last-modified"></span></p>
+  </footer>
+
+</body>
+</html>

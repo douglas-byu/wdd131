@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="80" height="80" aria-label="Ensolarado com vento">
+  <!-- Sun -->
+  <circle cx="38" cy="38" r="14" fill="#FFD700" />
+  <!-- Sun rays -->
+  <line x1="38" y1="16" x2="38" y2="10" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+  <line x1="38" y1="60" x2="38" y2="66" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+  <line x1="16" y1="38" x2="10" y2="38" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+  <line x1="60" y1="38" x2="66" y2="38" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+  <line x1="22" y1="22" x2="17" y2="17" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+  <line x1="54" y1="54" x2="59" y2="59" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+  <line x1="54" y1="22" x2="59" y2="17" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+  <line x1="22" y1="54" x2="17" y2="59" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+  <!-- Cloud -->
+  <ellipse cx="60" cy="65" rx="22" ry="14" fill="white" stroke="#CBD5E1" stroke-width="1.5"/>
+  <ellipse cx="48" cy="68" rx="14" ry="11" fill="white" stroke="#CBD5E1" stroke-width="1.5"/>
+  <ellipse cx="68" cy="60" rx="14" ry="10" fill="white" stroke="#CBD5E1" stroke-width="1.5"/>
+  <!-- Wind lines -->
+  <line x1="18" y1="78" x2="38" y2="78" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+  <line x1="12" y1="85" x2="35" y2="85" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+  <line x1="20" y1="92" x2="40" y2="92" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+</svg>
