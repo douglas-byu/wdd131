@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum do Templo</title>
+    <meta name="description"
+        content="Álbum de fotos de templos de A Igreja de Jesus Cristo dos Santos dos Últimos Dias.">
+    <meta name="author" content="Douglas Silva">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/templos.css">
+    <link rel="stylesheet" href="estilos/templos-grande.css">
+    <link rel="stylesheet" href="estilos/templos-filtrados.css">
+    <script src="scripts/templos-filtrados.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Álbum do Templo</h1>
+        <button id="hamburger-btn" aria-label="Menu">☰</button>
+        <nav id="nav-menu">
+            <a href="#" id="Página Inicial">Página Inicial</a>
+            <a href="#" id="Antigos">Antigos</a>
+            <a href="#" id="Novos">Novos</a>
+            <a href="#" id="Grandes">Grandes</a>
+            <a href="#" id="Pequenos">Pequenos</a>
+        </nav>
+    </header>
+    <main>
+        <h2 id="titulo-secao">Página Inicial</h2>
+        <div class="gallery" id="gallery">
+            <!-- Os cartões de templos serão gerados dinamicamente pelo JavaScript -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> 🤍 Douglas Silva 🤍 Brasil</p>
+        <p>Última Modificação: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>

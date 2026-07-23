@@ -4,37 +4,42 @@
    Azul, Vermelho, Branco e Amarelo (estrelas)
    ============================================= */
 :root {
-  --color-primary:    #003893;   /* Azul da bandeira */
-  --color-secondary:  #CF2027;   /* Vermelho da bandeira */
-  --color-accent:     #F7D116;   /* Amarelo das estrelas */
-  --color-white:      #FFFFFF;
-  --color-light-bg:   #EEF3FB;
-  --color-overlay:    rgba(0, 28, 80, 0.82);
+  --color-primary: #003893;
+  /* Azul da bandeira */
+  --color-secondary: #CF2027;
+  /* Vermelho da bandeira */
+  --color-accent: #F7D116;
+  /* Amarelo das estrelas */
+  --color-white: #FFFFFF;
+  --color-light-bg: #EEF3FB;
+  --color-overlay: rgba(0, 28, 80, 0.82);
   --color-overlay-weather: rgba(207, 32, 39, 0.88);
-  --color-text-dark:  #0D1B3E;
+  --color-text-dark: #0D1B3E;
   --color-text-muted: #4A6080;
 
-  --font-heading:     'Playfair Display', Georgia, serif;
-  --font-body:        'Inter', 'Segoe UI', Arial, sans-serif;
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', 'Segoe UI', Arial, sans-serif;
 
-  --spacing-xs:  0.4rem;
-  --spacing-sm:  0.75rem;
-  --spacing-md:  1.25rem;
-  --spacing-lg:  2rem;
-  --spacing-xl:  3rem;
+  --spacing-xs: 0.4rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1.25rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
 
-  --radius-sm:   6px;
-  --radius-md:   12px;
-  --radius-lg:   20px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
 
-  --shadow-box:  0 4px 24px rgba(0,0,0,0.18);
-  --transition:  all 0.3s ease;
+  --shadow-box: 0 4px 24px rgba(0, 0, 0, 0.18);
+  --transition: all 0.3s ease;
 }
 
 /* =============================================
    Reset e Base
    ============================================= */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -75,13 +80,11 @@ header::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: repeating-linear-gradient(
-    -45deg,
-    transparent,
-    transparent 20px,
-    rgba(255,255,255,0.03) 20px,
-    rgba(255,255,255,0.03) 40px
-  );
+  background: repeating-linear-gradient(-45deg,
+      transparent,
+      transparent 20px,
+      rgba(255, 255, 255, 0.03) 20px,
+      rgba(255, 255, 255, 0.03) 40px);
 }
 
 header h1 {
@@ -89,7 +92,7 @@ header h1 {
   font-size: clamp(1.8rem, 5vw, 3.2rem);
   color: var(--color-white);
   letter-spacing: 0.04em;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   position: relative;
 }
 
@@ -248,7 +251,7 @@ footer p {
 
   .hero-container .data-box.overlay-box table th,
   .hero-container .data-box.overlay-box table td {
-    color: rgba(255,255,255,0.9);
+    color: rgba(255, 255, 255, 0.9);
   }
 
   /* Caixa do clima: canto inferior direito */
@@ -265,7 +268,7 @@ footer p {
 
   .hero-container .weather-box.overlay-box table th,
   .hero-container .weather-box.overlay-box table td {
-    color: rgba(255,255,255,0.95);
+    color: rgba(255, 255, 255, 0.95);
   }
 
   /* Pseudoelemento: ícone de clima após o título "Clima" no desktop */
@@ -296,7 +299,7 @@ footer p {
 .data-box:hover,
 .weather-box:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.22);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.22);
 }
 
 table tr {
