@@ -123,13 +123,13 @@ function filtrarTemplos(filtro) {
 
     if (filtro === 'Página Inicial') {
         resultado = templos;
-    } else if (filtro === 'Antigos') {
+    } else if (filtro === 'Antigo') {
         resultado = templos.filter(t => parseInt(t.consagracao) < 1900);
-    } else if (filtro === 'Novos') {
+    } else if (filtro === 'Novo') {
         resultado = templos.filter(t => parseInt(t.consagracao) > 2000);
-    } else if (filtro === 'Grandes') {
+    } else if (filtro === 'Grande') {
         resultado = templos.filter(t => t.area > 90000);
-    } else if (filtro === 'Pequenos') {
+    } else if (filtro === 'Pequeno') {
         resultado = templos.filter(t => t.area < 10000);
     }
 

@@ -102,12 +102,6 @@ figure img {
     display: block;
 }
 
-figcaption {
-    padding: 0.5rem;
-    font-size: 0.9rem;
-    color: #555;
-}
-
 /* ===== FOOTER ===== */
 footer {
     background-color: #4b2e83;
