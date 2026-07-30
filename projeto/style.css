@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #FF5722;
+    --bg-main: #121212;
+    --bg-sec: #1E1E1E;
+    --text-main: #F5F5F5;
+    --font-heading: 'Oswald', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--bg-sec);
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 4px solid var(--primary-color);
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: var(--bg-sec);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Wireframe Styles */
+.wireframe-mobile {
+    border: 2px dashed #666;
+    width: 100%;
+    max-width: 350px;
+    margin: 1rem auto;
+    background-color: #000;
+}
+
+.wireframe-desktop {
+    border: 2px dashed #666;
+    width: 100%;
+    margin: 1rem auto;
+    background-color: #000;
+}
+
+.wf-header, .wf-footer {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+    color: #aaa;
+}
+
+.wf-hero {
+    background-color: #444;
+    padding: 3rem 1rem;
+    text-align: center;
+    color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wf-section {
+    padding: 2rem 1rem;
+    border-bottom: 1px dashed #666;
+    text-align: center;
+    color: #ccc;
+}
+
+/* Desktop Specific Wireframe */
+.wireframe-desktop .wf-header {
+    display: flex;
+    justify-content: space-between;
+}
+.wireframe-desktop .nav {
+    font-size: 0.9em;
+}
+
+.wireframe-desktop .wf-hero {
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 2rem;
+}
+.wf-hero-text, .wf-hero-img {
+    flex: 1;
+    padding: 1rem;
+}
+
+.wf-row {
+    display: flex;
+}
+.wf-col {
+    flex: 1;
+    padding: 2rem 1rem;
+    border-right: 1px dashed #666;
+    text-align: center;
+    color: #ccc;
+}
+.wf-col:last-child {
+    border-right: none;
+}
