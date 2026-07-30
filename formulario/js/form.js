@@ -37,4 +37,10 @@ document.addEventListener("DOMContentLoaded", () => {
         option.textContent = product.name; // Usa o name do objeto como texto visível
         productSelect.appendChild(option);
     });
+
+    // Atualiza footer
+    const yearEl = document.getElementById('currentYear');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+    const modifiedEl = document.getElementById('lastModified');
+    if (modifiedEl) modifiedEl.textContent = `Última Modificação: ${document.lastModified}`;
 });

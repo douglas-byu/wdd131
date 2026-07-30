@@ -13,4 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (counterElement) {
         counterElement.textContent = numReviews;
     }
+
+    // Atualiza footer
+    const yearEl = document.getElementById('currentYear');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+    const modifiedEl = document.getElementById('lastModified');
+    if (modifiedEl) modifiedEl.textContent = `Última Modificação: ${document.lastModified}`;
 });

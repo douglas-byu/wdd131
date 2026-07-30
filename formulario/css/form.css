@@ -201,3 +201,11 @@ input[type="submit"]:hover {
 .back-link:hover {
     background-color: var(--accent);
 }
+
+/* Media Query */
+@media screen and (max-width: 600px) {
+    main {
+        margin: 1rem auto;
+        padding: 0 0.5rem;
+    }
+}
